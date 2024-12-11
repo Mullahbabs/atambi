@@ -117,10 +117,10 @@
         var parameters = extend({
                 year: 2024,
                 month: 12,
-                day: 10,
-                hours: 22,
-                minutes: 54,
-                seconds: 17,
+                day: 21,
+                hours: 0,
+                minutes: 0,
+                seconds: 0,
                 words: {
                     days: 'day',
                     hours: 'hour',
@@ -154,7 +154,7 @@
             cd = document.querySelectorAll(elt);
 
         targetTmpDate = new Date(
-            parameters.year,
+            parameters.year,  
             parameters.month - 1,
             parameters.day,
             parameters.hours,
@@ -246,20 +246,20 @@
                         seconds + ' ' + secondWord + '.';
 
                 } else {
-                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
+                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '' : '') + days;
                     fullCountDown.days.word.textContent = dayWord;
 
-                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 2 ? '0' : '') + hours;
+                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 2 ? '' : '') + hours;
                     fullCountDown.hours.word.textContent = hourWord;
 
-                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
+                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '' : '') + minutes;
                     fullCountDown.minutes.word.textContent = minuteWord;
 
-                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
+                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '' : '') + seconds;
                     fullCountDown.seconds.word.textContent = secondWord;
                 }
             };
-
+               
             // Refresh immediately to prevent a Flash of Unstyled Content
             refresh();
             interval = window.setInterval(refresh, parameters.refresh);

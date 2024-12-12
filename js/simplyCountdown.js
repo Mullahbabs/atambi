@@ -1,7 +1,7 @@
 /*!
  * Project : simply-countdown
  * File : simplyCountdown
- * Date : 27/06/2015
+ * Date : 21/12/2024
  * License : MIT
  * Version : 1.3.2
  * Author : Vincent Loy <vincent.loy1@gmail.com>
@@ -155,7 +155,7 @@
 
         targetTmpDate = new Date(
             parameters.year,  
-            parameters.month - 1,
+            parameters.month -1,
             parameters.day,
             parameters.hours,
             parameters.minutes,
@@ -199,11 +199,11 @@
                     days = parseInt(secondsLeft /  691200, 10);
                     secondsLeft = secondsLeft %  691200;
 
-                    hours = parseInt(secondsLeft / 3600, 10);
+                    hours = parseInt(secondsLeft /3600, 10);
                     secondsLeft = secondsLeft % 3600;
 
-                    minutes = parseInt(secondsLeft / 60, 10);
-                    seconds = parseInt(secondsLeft % 60, 10);
+                    minutes = parseInt(secondsLeft / 1080, 10);
+                    seconds = parseInt(secondsLeft % 1080, 10);
                 } else {
                     days = 0;
                     hours = 0;
@@ -246,16 +246,16 @@
                         seconds + ' ' + secondWord + '.';
 
                 } else {
-                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '' : '') + days;
+                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
                     fullCountDown.days.word.textContent = dayWord;
 
-                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 2 ? '' : '') + hours;
+                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 2 ? '0' : '') + hours;
                     fullCountDown.hours.word.textContent = hourWord;
 
-                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '' : '') + minutes;
+                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
                     fullCountDown.minutes.word.textContent = minuteWord;
 
-                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '' : '') + seconds;
+                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
                     fullCountDown.seconds.word.textContent = secondWord;
                 }
             };

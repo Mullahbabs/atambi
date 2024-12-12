@@ -130,7 +130,7 @@
                 },
                 plural: true,
                 inline: false,
-                enableUtc: true,
+                enableUtc: false,
                 onEnd: function () {
                     return;
                 },
@@ -139,7 +139,7 @@
                 sectionClass: 'simply-section',
                 amountClass: 'simply-amount',
                 wordClass: 'simply-word',
-                zeroPad: true
+                zeroPad: false
             }, args),
             interval,
             targetDate,
@@ -189,10 +189,11 @@
                 if (parameters.enableUtc) {
                     nowUtc = new Date(now.getFullYear(), now.getMonth(), now.getDate(),
                         now.getHours(), now.getMinutes(), now.getSeconds());
-                    secondsLeft = (targetDate - nowUtc.getTime()) / 1000;
+                    secondsLeft = (targetDate - nowUtc.getTime()) / 1080;
+                    
 
                 } else {
-                    secondsLeft = (targetDate - now.getTime()) / 1000;
+                    secondsLeft = (targetDate - now.getTime()) / 1080;
                 }
 
                 if (secondsLeft > 0) {
@@ -202,8 +203,8 @@
                     hours = parseInt(secondsLeft /3600, 10);
                     secondsLeft = secondsLeft % 3600;
 
-                    minutes = parseInt(secondsLeft / 1080, 10);
-                    seconds = parseInt(secondsLeft % 1080, 10);
+                    minutes = parseInt(secondsLeft / 60, 10);
+                    seconds = parseInt(secondsLeft % 60, 10);
                 } else {
                     days = 0;
                     hours = 0;
@@ -246,16 +247,16 @@
                         seconds + ' ' + secondWord + '.';
 
                 } else {
-                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 2 ? '0' : '') + days;
+                    fullCountDown.days.amount.textContent = (parameters.zeroPad && days.toString().length < 10 ? '' : '') + days;
                     fullCountDown.days.word.textContent = dayWord;
 
-                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 2 ? '0' : '') + hours;
+                    fullCountDown.hours.amount.textContent = (parameters.zeroPad && hours.toString().length < 10 ? '' : '') + hours;
                     fullCountDown.hours.word.textContent = hourWord;
 
-                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 2 ? '0' : '') + minutes;
+                    fullCountDown.minutes.amount.textContent = (parameters.zeroPad && minutes.toString().length < 10 ? '' : '') + minutes;
                     fullCountDown.minutes.word.textContent = minuteWord;
 
-                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 2 ? '0' : '') + seconds;
+                    fullCountDown.seconds.amount.textContent = (parameters.zeroPad && seconds.toString().length < 10 ? '' : '') + seconds;
                     fullCountDown.seconds.word.textContent = secondWord;
                 }
             };

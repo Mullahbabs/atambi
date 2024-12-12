@@ -139,7 +139,7 @@
                 sectionClass: 'simply-section',
                 amountClass: 'simply-amount',
                 wordClass: 'simply-word',
-                zeroPad: false
+                zeroPad: true
             }, args),
             interval,
             targetDate,
@@ -196,8 +196,8 @@
                 }
 
                 if (secondsLeft > 0) {
-                    days = parseInt(secondsLeft / 86400, 10);
-                    secondsLeft = secondsLeft % 86400;
+                    days = parseInt(secondsLeft /  691200, 10);
+                    secondsLeft = secondsLeft %  691200;
 
                     hours = parseInt(secondsLeft / 3600, 10);
                     secondsLeft = secondsLeft % 3600;

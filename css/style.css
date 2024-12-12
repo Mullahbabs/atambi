@@ -15,7 +15,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
-  color: #fff;
+  color: #fffdd0;
   background: black;
 }
 
@@ -47,13 +47,13 @@ body {
 }
 
 a {
-  color: #F14E95;
+  color: #6F4E37;
   -webkit-transition: 0.5s;
   -o-transition: 0.5s;
   transition: 0.5s;
 }
 a:hover, a:active, a:focus {
-  color: #F14E95;
+  color: #fffdd0;
   outline: none;
   text-decoration: none;
 }
@@ -63,25 +63,25 @@ p {
 }
 
 h1, h2, h3, h4, h5, h6, figure {
-  color: #fff;
+  color: #fffdd0;
   font-family: "Work Sans", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 20px 0;
 }
 
 ::-webkit-selection {
-  color: #fff;
-  background: #F14E95;
+  color: #fffdd0;
+  background: rgb(111, 78, 55);
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: #F14E95;
+  color: #fffdd0;
+  background: rgb(111, 78, 55)5;
 }
 
 ::selection {
-  color: #fff;
-  background: #F14E95;
+  color: #fffdd0;
+  background: rgb(111, 78, 55);
 }
 
 .fh5co-nav {
@@ -134,7 +134,7 @@ h1, h2, h3, h4, h5, h6, figure {
   transition: 0.5s;
 }
 .fh5co-nav ul li a:hover, .fh5co-nav ul li a:focus, .fh5co-nav ul li a:active {
-  color: white;
+  color: #fffdd0;
 }
 .fh5co-nav ul li.has-dropdown {
   position: relative;
@@ -151,7 +151,7 @@ h1, h2, h3, h4, h5, h6, figure {
   top: 40px;
   left: 0;
   text-align: left;
-  background: #fff;
+  background: #fffdd0;
   padding: 20px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6, figure {
   width: 0;
   position: absolute;
   pointer-events: none;
-  border-bottom-color: #fff;
+  border-bottom-color: #fffdd0;
   border-width: 8px;
   margin-left: -8px;
 }
@@ -193,13 +193,13 @@ h1, h2, h3, h4, h5, h6, figure {
   color: #000;
 }
 .fh5co-nav ul li.has-dropdown:hover a, .fh5co-nav ul li.has-dropdown:focus a {
-  color: #fff;
+  color: #fffdd0;
 }
 .fh5co-nav ul li.btn-cta a {
-  color:#F14E95;
+  color:#6F4E37;
 } 
 .fh5co-nav ul li.btn-cta a span {
-  background: #fff;
+  background: #fffdd0;
   padding: 4px 20px;
   display: -moz-inline-stack;
   display: inline-block;
@@ -219,7 +219,7 @@ h1, h2, h3, h4, h5, h6, figure {
   box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
 }
 .fh5co-nav ul li.active > a {
-  color: #fff !important;
+  color: #fffdd0 !important;
 }
 
 #fh5co-counter,
@@ -402,7 +402,7 @@ h1, h2, h3, h4, h5, h6, figure {
 }
 #fh5co-counter .event-wrap,
 #fh5co-event .event-wrap {
-  border: 2px solid #F14E95;
+  border: 2px solid #6F4E37;
   background: rgba(255, 255, 255, 0.1);
   padding: 30px;
   width: 100%;
@@ -489,7 +489,7 @@ h1, h2, h3, h4, h5, h6, figure {
 .timeline > li > .timeline-panel {
   width: 40%;
   float: left;
-  border: 1px solid #F14E95;
+  border: 1px solid #6F4E37;
   padding: 30px;
   position: relative;
   -webkit-border-radius: 4px;
@@ -768,7 +768,7 @@ h1, h2, h3, h4, h5, h6, figure {
   display: inline-block;
   zoom: 1;
   *display: inline;
-  color: #F14E95;
+  color: #6F4E37;
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -787,7 +787,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: relative;
 }
 .fh5co-contact-info ul li:before {
-  color: #F14E95;
+  color: #6F4E37;
   position: absolute;
   left: 0;
   top: .05em;
@@ -836,7 +836,7 @@ form label {
 .fh5co-cover .display-tc h2 {
   margin: 0;
   padding: 0;
-  color: white;
+  color: #6F4E37;
 }
 #fh5co-header .display-tc h1,
 #fh5co-counter .display-tc h1,
@@ -878,8 +878,8 @@ form label {
 #fh5co-counter .display-tc .btn,
 .fh5co-cover .display-tc .btn {
   padding: 15px 20px;
-  background: #fff !important;
-  color: #F14E95;
+  background: #fffdd0 !important;
+  color: #6F4E37;
   border: none !important;
   font-size: 14px;
   text-transform: uppercase;
@@ -887,7 +887,7 @@ form label {
 #fh5co-header .display-tc .btn:hover,
 #fh5co-counter .display-tc .btn:hover,
 .fh5co-cover .display-tc .btn:hover {
-  background: #fff !important;
+  background: #fffdd0 !important;
   -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
   box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75) !important;
@@ -899,7 +899,7 @@ form label {
 #fh5co-counter .counter {
   font-size: 50px;
   margin-bottom: 10px;
-  color: #fff;
+  color: #fffdd0;
   font-weight: 100;
   display: block;
 }
@@ -942,7 +942,7 @@ form label {
   display: inline-block;
   width: 100px;
   height: 100px;
-  background: rgba(241, 78, 149, 0.8);
+  background: rgb(111, 78, 55);
   margin: 0 4px;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -974,7 +974,7 @@ form label {
 .simply-countdown > .simply-section .simply-amount,
 .simply-countdown > .simply-section .simply-word {
   display: block;
-  color: white;
+  color: #fffdd0;
   /* amounts and words */
 }
 
@@ -1043,7 +1043,7 @@ form label {
   font-size: 20px;
   background: #fff;
   padding: 20px;
-  color: #F14E95;
+  color: #6F4E37;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1066,7 +1066,7 @@ form label {
 }
 .couple-half h3 {
   font-family: "Sacramento", Arial, serif;
-  color: #F14E95;
+  color: #6F4E37;
   font-size: 30px;
 }
 .couple-half .groom, .couple-half .bride {
@@ -1181,7 +1181,7 @@ form label {
   margin-bottom: 10px;
   line-height: 1.5;
   font-weight: bold;
-  color: #F14E95;
+  color: #6F4E37;
   font-family: "Sacramento", Arial, serif;
 }
 @media screen and (max-width: 768px) {
@@ -1192,7 +1192,7 @@ form label {
 .fh5co-heading p {
   font-size: 18px;
   line-height: 1.5;
-  color: #828282;
+  color: #fffdd0;
 }
 .fh5co-heading span {
   text-transform: uppercase;
@@ -1216,7 +1216,7 @@ form label {
   display: block;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide span a.twitter {
-  color: #F14E95;
+  color: #6F4E37;
   font-weight: 300;
 }
 #fh5co-testimonial .wrap-testimony .testimony-slide figure {
@@ -1355,18 +1355,18 @@ form label {
   transition: 0.5s;
 }
 #fh5co-started .form-control::-webkit-input-placeholder {
-  color: #fff;
+  color: #fffdd0;
 }
 #fh5co-started .form-control:-moz-placeholder {
   /* Firefox 18- */
-  color: #fff;
+  color: #fffdd0;
 }
 #fh5co-started .form-control::-moz-placeholder {
   /* Firefox 19+ */
-  color: #fff;
+  color: #fffdd0;
 }
 #fh5co-started .form-control:-ms-input-placeholder {
-  color: #fff;
+  color: #fffdd0;
 }
 #fh5co-started .form-control:focus {
   background: rgba(255, 255, 255, 0.3);
@@ -1374,7 +1374,7 @@ form label {
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
-  background: #F14E95;
+  background:#6F4E37;
   color: #fff;
   font-size: 16px;
   text-transform: uppercase;
@@ -1418,7 +1418,7 @@ form label {
 }
 .owl-carousel .owl-controls .owl-dot.active span {
   background: transparent;
-  border: 2px solid #F14E95;
+  border: 2px solid #6F4E37;
 }
 
 #fh5co-offcanvas {
@@ -1671,22 +1671,22 @@ form label {
 }
 
 .btn-primary {
-  background: #F14E95;
-  color: #fff;
-  border: 2px solid #F14E95;
+  background: #6F4E37;
+  color: #fffdd0;
+  border: 2px solid #6F4E37;
 }
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  background: #f366a3 !important;
-  border-color: #f366a3 !important;
+  background: #6F4E37 !important;
+  border-color: #6F4E37 !important;
 }
 .btn-primary.btn-outline {
   background: transparent;
-  color: #F14E95;
-  border: 2px solid #F14E95;
+  color: #6F4E37;
+  border: 2px solid #6F4E37;
 }
 .btn-primary.btn-outline:hover, .btn-primary.btn-outline:focus, .btn-primary.btn-outline:active {
-  background: #F14E95;
-  color: #fff;
+  background: #6F4E37;
+  color: #fffdd0;
 }
 
 .btn-success {
@@ -1747,22 +1747,22 @@ form label {
 }
 
 .btn-danger {
-  background: #d9534f;
-  color: #fff;
-  border: 2px solid #d9534f;
+  background: #6F4E37;
+  color: #fffdd0;
+  border: 2px solid #6F4E37;
 }
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active {
-  background: #d43f3a !important;
-  border-color: #d43f3a !important;
+  background: #6F4E37 !important;
+  border-color: #6F4E37 !important;
 }
 .btn-danger.btn-outline {
   background: transparent;
-  color: #d9534f;
-  border: 2px solid #d9534f;
+  color: #6F4E37;
+  border: 2px solid #6F4E37;
 }
 .btn-danger.btn-outline:hover, .btn-danger.btn-outline:focus, .btn-danger.btn-outline:active {
-  background: #d9534f;
-  color: #fff;
+  background: #6F4E37;
+  color: #fffdd0;
 }
 
 .btn-outline {
@@ -1815,7 +1815,7 @@ form label {
 .form-control:active, .form-control:focus {
   outline: none;
   box-shadow: none;
-  border-color: #F14E95;
+  border-color: #6F4E37;
 }
 
 .row-pb-md {
